@@ -1,0 +1,57 @@
+.textColor {
+    color: #fff;
+    font-size: 20px;
+}
+
+.backgroudColor {
+    background-color: #000000;
+}
+
+
+/* Vinculos */
+
+.vinculo {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000000;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 0px;
+}
+
+/* Inicio presentacion desarrolladores */
+
+.titleH2 {
+    font-size: 40px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.presentacion {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    height: auto;
+}
+
+.presentacionDev {
+    width: 60%;
+    font-size: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.imgDev {
+    padding-left: 40px;
+}
+
+.seeProjects {
+    border: 1px solid #ec5151;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 210px;
+    color: #ec5151;
+    background-color: #000000;
+    margin-top: 5%;
+    margin-bottom: 8.9%;
+}
