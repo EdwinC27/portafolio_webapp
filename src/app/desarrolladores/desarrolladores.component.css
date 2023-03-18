@@ -1,0 +1,65 @@
+.textColor {
+    color: #fff;
+    font-size: 20px;
+}
+
+.backgroudColor {
+    background-color: #000000;
+}
+
+
+/* Vinculos */
+
+.vinculo {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000000;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 0px;
+
+}
+
+/* Inicio Desarrolladores */
+
+.titleH2 {
+    color: #2E64FE; 
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+.contenedorDevelopers {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.diseñodivDevelopers {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 28%;
+}
+
+.diseñodivDevelopers img  {
+    width: 60%;
+}
+
+.diseñodivDevelopersMarco {
+    border: 1px solid #ec5151;
+    border-radius: 20%;
+}
+
+.diseñodivDevelopers .moreInfo {
+    border: 1px solid #ec5151;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 110px;
+    color: #ec5151;
+    background-color: #000000;
+}
