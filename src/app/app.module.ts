@@ -7,13 +7,15 @@ import { DesarrolladoresComponent } from './desarrolladores/desarrolladores.comp
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetallesDesarrolladorComponent } from './detalles-desarrollador/detalles-desarrollador.component';
 import { ProyectosDesarrolladorComponent } from './proyectos-desarrollador/proyectos-desarrollador.component';
+import { DetalleProyectoDesarrolladorComponent } from './detalle-proyecto-desarrollador/detalle-proyecto-desarrollador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DesarrolladoresComponent,
     DetallesDesarrolladorComponent,
-    ProyectosDesarrolladorComponent
+    ProyectosDesarrolladorComponent,
+    DetalleProyectoDesarrolladorComponent
   ],
   imports: [
     BrowserModule,
