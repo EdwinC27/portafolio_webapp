@@ -1,45 +1,29 @@
 <div class="backgroudColor textColor">
   <div>
-    <button class="vinculo">Developers</button>
     <h2 class="text-center titleH2">Developers</h2>
   </div>
   
   <div class="contenedorDevelopers">
-    <div class="diseñodivDevelopers text-center diseñodivDevelopersMarco">
-      <p>Edwin Alejandro Castillo Arroyo</p>
+    <div class="diseñodivDevelopers text-center diseñodivDevelopersMarco" *ngFor="let developer of developers">
+      <p> {{ developer.name }}</p>
       <img src="../../assets/imagenes/edwin.png"><br><br>
-      <button class="moreInfo">More info</button>
-    </div>
-
-    <div class="diseñodivDevelopers text-center diseñodivDevelopersMarco">
-      <p>Edwin Alejandro Castillo Arroyo</p>
-      <img src="../../assets/imagenes/edwin.png"><br><br>
-      <button class="moreInfo">More info</button>
-    </div> 
-
-    <div class="diseñodivDevelopers text-center diseñodivDevelopersMarco">      
-      <p>Edwin Alejandro Castillo Arroyo</p>
-      <img src="../../assets/imagenes/edwin.png"><br><br>
-      <button class="moreInfo">More info</button>
-    </div>
-
-    <div class="diseñodivDevelopers text-center diseñodivDevelopersMarco">
-      <p>Edwin Alejandro Castillo Arroyo</p>
-      <img src="../../assets/imagenes/edwin.png"><br><br>
-      <button class="moreInfo">More info</button>
-    </div>
- 
-    <div class="diseñodivDevelopers text-center diseñodivDevelopersMarco">
-      <p>Edwin Alejandro Castillo Arroyo</p>
-      <img src="../../assets/imagenes/edwin.png"><br><br>
-      <button class="moreInfo">More info</button>
-    </div>
+      <button class="moreInfo" (click)="selectDeveloper(developer)">More info</button><br><br>
+      
+      <div *ngIf="developer === selectedDeveloper">
+        <h2>{{ developer.name }}</h2>
+        <p>Teléfono: {{ developer.phone }}</p>
     
-    <div class="diseñodivDevelopers text-center diseñodivDevelopersMarco">
-      <p>Edwin Alejandro Castillo Arroyo</p>
-      <img src="../../assets/imagenes/edwin.png"><br><br>
-      <button class="moreInfo">More info</button>
-    </div>
-  </div>
-</div>
+        <h4>Proyectos:</h4>
+    
+        <button *ngFor="let project of developer.projects" (click)="showDetails(project)"  class="botonProjects">{{ project.title }}</button>
 
+        <div *ngIf="selectedProject">
+          <h2>{{ selectedProject.title }}</h2>
+          <img [src]="selectedProject.image" alt="">
+          <p>{{ selectedProject.description }}</p>
+          <a [href]="selectedProject.deployedUrl">Ir a la aplicación</a>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>

@@ -5,20 +5,9 @@
 
 .backgroudColor {
     background-color: #000000;
-}
-
-
-/* Vinculos */
-
-.vinculo {
     text-decoration: none;
-    color: #fff;
-    background-color: #000000;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 0px;
-
 }
+
 
 /* Inicio Desarrolladores */
 
@@ -63,3 +52,13 @@
     color: #ec5151;
     background-color: #000000;
 }
+
+.botonProjects {
+    border: 1px solid #ec5151;
+    border-radius: 50%;
+    color: #d65d5d;
+    background-color: #000000;
+    margin: 10px;
+}
+
+/* Fin Desarrolladores */
