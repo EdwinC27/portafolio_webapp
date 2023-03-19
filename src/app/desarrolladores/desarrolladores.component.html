@@ -1,29 +1,25 @@
-<div class="backgroudColor textColor">
-  <div>
-    <h2 class="text-center titleH2">Developers</h2>
-  </div>
-  
-  <div class="contenedorDevelopers">
-    <div class="diseñodivDevelopers text-center diseñodivDevelopersMarco" *ngFor="let developer of developers">
-      <p> {{ developer.name }}</p>
-      <img src="../../assets/imagenes/edwin.png"><br><br>
-      <button class="moreInfo" (click)="selectDeveloper(developer)">More info</button><br><br>
-      
-      <div *ngIf="developer === selectedDeveloper">
-        <h2>{{ developer.name }}</h2>
-        <p>Teléfono: {{ developer.phone }}</p>
-    
-        <h4>Proyectos:</h4>
-    
-        <button *ngFor="let project of developer.projects" (click)="showDetails(project)"  class="botonProjects">{{ project.title }}</button>
+<div class="textColor">
+  <section class="grid-conteiner"> <!-- Presentacion -->
+    <!-- informacion personal -->
+    <nav class="presentacion conteiner">
+      <h1 class="tamaño-title">Hola, Soy Edwin Castillo, Un Apasionado Del DESARROLLO Y GESTIÓN DE SOFTWARE</h1>
+      <p class="tamaño-text ">Tengo actualmente 18 años, Soy un apacionado de la tecnología,
+      <br> me gusta aprender constantemente cosas nuevas relacionado con la programación, mi principal pasatiempo es la Seguridad Informática y el desarrollo de software.</p>
+    </nav>	
 
-        <div *ngIf="selectedProject">
-          <h2>{{ selectedProject.title }}</h2>
-          <img [src]="selectedProject.image" alt="">
-          <p>{{ selectedProject.description }}</p>
-          <a [href]="selectedProject.deployedUrl">Ir a la aplicación</a>
-        </div>
-      </div>
+    <!--imagen -->
+    <div class="graphic">
+      <img class="graphic_man" src="../../assets/imagenes/edwin.png">
+    </div>		
+  </section>
+  
+  <div class="contenedorProjects">
+    <div class="diseñodivProjects text-center diseñodivProjectsMarco" *ngFor="let project of projects" (click)="toggleDescription(project)"> 
+      <h2>{{ project.title }}</h2>
+      <img [src]="project.image" [alt]="project.title"><br>
+      <a target="_blank" [href]="project.deployedUrl">Ir a la aplicación</a>
+      <p *ngIf="project.showDescription">{{ project.description }}</p>
     </div>
   </div>  
+  
 </div>
