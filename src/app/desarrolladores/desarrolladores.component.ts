@@ -54,10 +54,6 @@ export class DesarrolladoresComponent {
   
   selectedProject: Project | null = null;
 
-  showDetails(project: Project) {
-    this.selectedProject = project;
-  }
-
   toggleDescription(project: Project) {
     project.showDescription = !project.showDescription;
   }
