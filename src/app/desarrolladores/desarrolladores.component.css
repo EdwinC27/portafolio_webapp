@@ -80,6 +80,13 @@
 	font-size: 1.2rem;
 }
 
+.botonProjects {
+    border: 1px solid #ec5151;
+    color: #d65d5d;
+    padding: 10px;
+	text-decoration: none;
+}
+
 @media screen and (min-width: 1000px) {
 	.conteiner {
 		width: 110%;

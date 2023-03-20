@@ -16,8 +16,8 @@
   <div class="contenedorProjects">
     <div class="diseñodivProjects text-center diseñodivProjectsMarco" *ngFor="let project of projects" (click)="toggleDescription(project)"> 
       <h2>{{ project.title }}</h2>
-      <img [src]="project.image" [alt]="project.title"><br>
-      <a target="_blank" [href]="project.deployedUrl">Ir a la aplicación</a>
+      <img [src]="project.image" [alt]="project.title"><br><br>
+      <a target="_blank" [href]="project.deployedUrl"class="botonProjects">Ir a la aplicación</a><br><br>
       <p *ngIf="project.showDescription">{{ project.description }}</p>
     </div>
   </div>  
