@@ -60,7 +60,7 @@
 .presentacion {
 	height: 100%;
 	width: 99%;
-	margin: 5;
+	margin: 5px;
 	text-align: center;
 	margin: 10px;
 	padding-bottom: 1px;
@@ -81,9 +81,9 @@
 }
 
 .botonProjects {
-    border: 1px solid #ec5151;
-    color: #d65d5d;
-    padding: 10px;
+  border: 1px solid #ec5151;
+  color: #d65d5d;
+  padding: 10px;
 	text-decoration: none;
 }
 
@@ -99,7 +99,7 @@
 
 	.tamaño-text {
 		font-size: 1.5rem;
-	}	
+	}
 
 	.grid-conteiner {
 		display: grid;
@@ -107,9 +107,17 @@
 	}
 
 	.presentacion {
-		
+
 		padding-top: 80px;
 	}
+}
+
+@media screen and (max-width: 400px) {
+  .diseñodivProjects {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
 /* Fin presentacion */
 

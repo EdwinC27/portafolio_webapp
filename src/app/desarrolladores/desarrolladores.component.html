@@ -5,21 +5,21 @@
       <h1 class="tamaño-title">Hola, Soy Edwin Castillo, Un Apasionado Del DESARROLLO Y GESTIÓN DE SOFTWARE</h1>
       <p class="tamaño-text ">Tengo actualmente 18 años, Soy un apacionado de la tecnología,
       <br> me gusta aprender constantemente cosas nuevas relacionado con la programación, mi principal pasatiempo es la Seguridad Informática y el desarrollo de software.</p>
-    </nav>	
+    </nav>
 
     <!--imagen -->
     <div class="graphic">
       <img class="graphic_man" src="../../assets/imagenes/edwin.png">
-    </div>		
+    </div>
   </section>
-  
+
   <div class="contenedorProjects">
-    <div class="diseñodivProjects text-center diseñodivProjectsMarco" *ngFor="let project of projects" (click)="toggleDescription(project)"> 
+    <div class="diseñodivProjects text-center diseñodivProjectsMarco" *ngFor="let project of projects" (click)="toggleDescription(project)">
       <h2>{{ project.title }}</h2>
       <img [src]="project.image" [alt]="project.title"><br><br>
       <a target="_blank" [href]="project.deployedUrl"class="botonProjects">Ir a la aplicación</a><br><br>
       <p *ngIf="project.showDescription">{{ project.description }}</p>
     </div>
-  </div>  
-  
+  </div>
+
 </div>
