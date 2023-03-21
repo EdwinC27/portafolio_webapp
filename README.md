@@ -11,6 +11,11 @@ Allí, encontrarás detalles sobre los proyectos en los que he trabajado, así c
 Espero que disfrutes revisando mi trabajo y que encuentres algunos proyectos que sean de tu interés. Si tienes alguna pregunta o estás interesado en trabajar conmigo en algún proyecto, no dudes en contactarme. Estoy a tu disposición para discutir cualquier idea o proyecto en el que puedas estar pensando.
 
 
+## Boceto
+<img src="https://github.com/EdwinC27/portafolio_webapp/blob/master/boceto.jpg">
+Este es el boceto de la página web
+
+
 ## Inicializacion
 Para utilizar este proyecto, se pueden seguir una las siguientes instrucciones:
 
