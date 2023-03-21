@@ -9,3 +9,6 @@ Si estás interesado en conocer más acerca de mis habilidades y experiencia, te
 Allí, encontrarás detalles sobre los proyectos en los que he trabajado, así como información sobre las tecnologías y herramientas que he utilizado para desarrollarlos.
 
 Espero que disfrutes revisando mi trabajo y que encuentres algunos proyectos que sean de tu interés. Si tienes alguna pregunta o estás interesado en trabajar conmigo en algún proyecto, no dudes en contactarme. Estoy a tu disposición para discutir cualquier idea o proyecto en el que puedas estar pensando.
+
+### Nota
+Este proyecto ha sido creado utilizando CSS y Bootstrap, uno de los frameworks más populares de diseño web.
