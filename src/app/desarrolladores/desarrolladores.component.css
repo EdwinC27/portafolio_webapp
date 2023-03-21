@@ -188,3 +188,79 @@
 }
 /* fin graphic de la imagen de inicio */
 
+
+/* (Pagina Cursos) Inicio de Cursos */
+.img_certificados {
+	width: 25%;
+	height: 220px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: 2px solid #0489B1;
+}
+
+.img_certificados:hover {
+  	transform: scale(1.1);
+}
+
+@media screen and (max-width: 1200px) {
+	.img_certificados {
+		width: 30%;
+		height: 220px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.img_certificados {
+		width: 35%;
+		height: 220px;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	.img_certificados {
+		width: 40%;
+		height: 230px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.img_certificados {
+		width: 40%;
+		height: 210px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.img_certificados {
+		width: 45%;
+		height: 200px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.img_certificados {
+		width: 45%;
+		height: 170px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.img_certificados {
+		width: 80%;
+		height: 230px;
+		margin-left: 35px;
+		margin-right: 25px;
+	}
+}
+
+.certificadosTitle {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 45px;
+}
+/* (Pagina Cursos) Fin de Cursos */
