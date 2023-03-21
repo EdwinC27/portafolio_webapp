@@ -37,13 +37,6 @@ export class DesarrolladoresComponent {
       showDescription: false
     },
     {
-      title: 'Microcontrolador',
-      image: 'https://via.placeholder.com/200x100',
-      description: 'Aceptar solicitudes RESTful que reciba como parámetro el nombre de la ciudad o las coordenadas largas de latitud y devuelva una sugerencia de lista de reproducción de acuerdo con la temperatura.',
-      deployedUrl: 'https://github.com/EdwinC27/Microcontrolador',
-      showDescription: false
-    },
-    {
       title: 'Informacion IPs',
       image: '../../assets/imagenes/IPs.png',
       description: 'Ver información de una IP, ya sea ipv4 o ipv6',
@@ -51,7 +44,7 @@ export class DesarrolladoresComponent {
       showDescription: false
     },
   ];
-  
+
   selectedProject: Project | null = null;
 
   toggleDescription(project: Project) {
