@@ -7,6 +7,8 @@ import { Certificados } from './certificados-desarrollador.model';
   styleUrls: ['./certificados-desarrollador.component.css']
 })
 export class CertificadosDesarrolladorComponent {
+  title:string = "Certificados";
+
   certificates: Certificados[] = [
     {
       name: '36.5 horas de C',

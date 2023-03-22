@@ -7,6 +7,9 @@ import { Project } from './proyectos-desarrollador.model';
   styleUrls: ['./proyectos-desarrollador.component.css']
 })
 export class ProyectosDesarrolladorComponent {
+  title:string = "Proyectos Web";
+  irAplicacion:string = "Ir a la aplicación";
+
   projects: Project[] = [
     {
       title: 'Portafolio',

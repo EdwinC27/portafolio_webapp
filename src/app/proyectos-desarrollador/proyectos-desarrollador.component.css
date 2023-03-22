@@ -12,8 +12,6 @@
     padding-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
-    border-top: 2px solid rgb(236, 95, 95);
-	padding-top: 50px;
 }
 
 .diseñodivProjects {
@@ -35,6 +33,11 @@
     border-radius: 20%;
 }
 
+.proyectosTitle {
+  border-top: 2px solid rgb(236, 95, 95);
+	padding-top: 50px;
+  font-size: 45px;
+}
 
 @media screen and (max-width: 999px) {
 	.diseñodivProjects {
