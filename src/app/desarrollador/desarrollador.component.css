@@ -44,18 +44,10 @@
 	}
 
 	.presentacion {
-
 		padding-top: 80px;
 	}
 }
 
-@media screen and (max-width: 400px) {
-  .diseñodivProjects {
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-}
 /* Fin presentacion */
 
 
