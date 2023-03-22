@@ -64,6 +64,7 @@
 	display: grid;
 	padding-top: 3rem;
 	grid-template-columns: 35% 1fr;
+  padding-bottom: 1rem;
 }
 
 .graphic_man {
