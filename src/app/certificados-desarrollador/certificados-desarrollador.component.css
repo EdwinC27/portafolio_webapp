@@ -16,14 +16,12 @@
 }
 
 .contenedorCertificados {
-    display: inline-flex;
-    flex-wrap: wrap;
-    padding-top: 5%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-top: 5%;
 	padding-bottom: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
 	border-bottom: 2px solid rgb(236, 95, 95);
-
+  justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -82,9 +80,9 @@
 }
 
 .certificadosTitle {
-  	text-align: center;
-  	padding-bottom: 20px;
-  	font-size: 45px;
-  	border-top: 2px solid rgb(236, 95, 95);
+  text-align: center;
+	padding-bottom: 20px;
+	font-size: 45px;
+  border-top: 2px solid rgb(236, 95, 95);
 	padding-top: 50px;
 }
