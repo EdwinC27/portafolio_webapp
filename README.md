@@ -16,6 +16,17 @@ Espero que disfrutes revisando mi trabajo y que encuentres algunos proyectos que
 Este es el boceto de la página web
 
 
+## Requisitos:
+1. Tener node instalado en tu equipo, si no cuentas con el puedes descargarlo <a href="https://nodejs.org/es">aqui</a>
+2. Tener instalado npm en tu equipo, si no cuentas con el puedes hacerlo con el siguiente comando: 
+  ```  
+    npm install npm@latest -g
+  ```
+3. Tener instalado Angular en tu equipo, si no cuentas con el puedes hacerlo con el siguiente comando: 
+  ```  
+    npm install @angular/cli
+  ```
+
 ## Inicializacion
 Para utilizar este proyecto, se pueden seguir una las siguientes instrucciones:
 
