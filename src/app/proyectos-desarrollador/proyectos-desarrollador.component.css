@@ -1,0 +1,57 @@
+.botonProjects {
+    border: 1px solid #ec5151;
+    color: #d65d5d;
+    padding: 10px;
+      text-decoration: none;
+  }
+  
+
+.contenedorProjects {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: 2px solid rgb(236, 95, 95);
+	padding-top: 50px;
+}
+
+.diseñodivProjects {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 28%;
+}
+
+.diseñodivProjects img  {
+    width: 60%;
+}
+
+.diseñodivProjectsMarco {
+    border: 1px solid #ec5151;
+    border-radius: 20%;
+}
+
+
+@media screen and (max-width: 999px) {
+	.diseñodivProjects {
+		width: 40%;
+	}
+}
+
+
+@media screen and (max-width: 685px) {
+	.diseñodivProjects {
+		width: 60%;
+		margin-left: 15%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.textColor {
+		margin-top: 0px;
+	}
+}

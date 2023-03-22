@@ -5,9 +5,3 @@ export  interface Project {
     deployedUrl: string;
     showDescription: boolean;
 }
-
-export  interface Certificados {
-    name: string,
-    image: string,
-    url: string
-}

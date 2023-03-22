@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DesarrolladorComponent } from './desarrollador/desarrollador.component';
+import { ProyectosDesarrolladorComponent } from './proyectos-desarrollador/proyectos-desarrollador.component';
+import { CertificadosDesarrolladorComponent } from './certificados-desarrollador/certificados-desarrollador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DesarrolladorComponent
+    DesarrolladorComponent,
+    ProyectosDesarrolladorComponent,
+    CertificadosDesarrolladorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,36 +1,12 @@
-<div class="textColor">
-  <section class="grid-conteiner"> <!-- Presentacion -->
-    <!-- informacion personal -->
-    <nav class="presentacion conteiner">
-      <h1 class="tamaño-title">{{ presentacionTitle }}</h1>
-      <p class="tamaño-text ">{{ presentacionText }}</p>
-    </nav>
+<section class="grid-conteiner"> <!-- Presentacion -->
+  <!-- informacion personal -->
+  <nav class="presentacion conteiner">
+    <h1 class="tamaño-title">{{ presentacionTitle }}</h1>
+    <p class="tamaño-text ">{{ presentacionText }}</p>
+  </nav>
 
-    <!--imagen -->
-    <div class="graphic">
-      <img class="graphic_man" src="../../assets/imagenes/edwin.png">
-    </div>
-  </section>
-
-
-
-  <div class="contenedorProjects">
-    <div class="diseñodivProjects text-center diseñodivProjectsMarco" *ngFor="let project of projects" (click)="toggleDescription(project)">
-      <h2>{{ project.title }}</h2>
-      <img [src]="project.image" [alt]="project.title"><br><br>
-      <a target="_blank" [href]="project.deployedUrl"class="botonProjects">Ir a la aplicación</a><br><br>
-      <p *ngIf="project.showDescription">{{ project.description }}</p>
-    </div>
+  <!--imagen -->
+  <div class="graphic">
+    <img class="graphic_man" src="../../assets/imagenes/edwin.png">
   </div>
-
-
-  <h2 class="certificadosTitle">Certificados</h2>
-  <section class="contenedorProjects">
-    <section *ngFor="let certificate of certificates" class="img_certificados"> <!-- Certificados -->
-      <a target="_blank" [href]="certificate.url">
-        <img class="imgCertificadosMode" [src]="certificate.image" [alt]="certificate.name">
-      </a>
-    </section>
-  </section>
-
-</div>
+</section>

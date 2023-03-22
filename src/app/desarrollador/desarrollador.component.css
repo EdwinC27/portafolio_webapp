@@ -1,62 +1,3 @@
-.textColor {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-
-/* Inicio Desarrolladores */
-.contenedorProjects {
-    display: inline-flex;
-    flex-wrap: wrap;
-    padding-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.diseñodivProjects {
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 100px;
-    padding: 10px;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    width: 28%;
-}
-
-.diseñodivProjects img  {
-    width: 60%;
-}
-
-.diseñodivProjectsMarco {
-    border: 1px solid #ec5151;
-    border-radius: 20%;
-}
-
-
-@media screen and (max-width: 999px) {
-	.diseñodivProjects {
-		width: 40%;
-	}
-}
-
-
-@media screen and (max-width: 685px) {
-	.diseñodivProjects {
-		width: 60%;
-		margin-left: 15%;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	.textColor {
-		margin-top: 0px;
-	}
-}
-/* Fin Desarrolladores */
-
-
-/* Inicio Presentacion */
 .presentacion {
 	height: 100%;
 	width: 99%;
@@ -80,12 +21,6 @@
 	font-size: 1.2rem;
 }
 
-.botonProjects {
-  border: 1px solid #ec5151;
-  color: #d65d5d;
-  padding: 10px;
-	text-decoration: none;
-}
 
 @media screen and (min-width: 1000px) {
 	.conteiner {
@@ -104,6 +39,8 @@
 	.grid-conteiner {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 
 	.presentacion {
@@ -187,84 +124,3 @@
 	}
 }
 /* fin graphic de la imagen de inicio */
-
-
-/* (Pagina Cursos) Inicio de Cursos */
-.img_certificados {
-	width: 25%;
-	height: auto;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 20px;
-	border: 2px solid #0489B1;
-}
-
-.imgCertificadosMode {
-	width: 100%;
-}
-
-.img_certificados:hover {
-  	transform: scale(1.1);
-}
-
-@media screen and (max-width: 1200px) {
-	.img_certificados {
-		width: 30%;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 1100px) {
-	.img_certificados {
-		width: 35%;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 940px) {
-	.img_certificados {
-		width: 40%;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	.img_certificados {
-		width: 40%;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 700px) {
-	.img_certificados {
-		width: 45%;
-		height: auto;
-		margin-left: 10px;
-		margin-right: 10px;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	.img_certificados {
-		width: 45%;
-		height: auto;
-		margin-left: 5px;
-		margin-right: 5px;
-	}
-}
-
-@media screen and (max-width: 530px) {
-	.img_certificados {
-		width: 80%;
-		height: auto;
-		margin-left: 35px;
-		margin-right: 25px;
-	}
-}
-
-.certificadosTitle {
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: 45px;
-}
-/* (Pagina Cursos) Fin de Cursos */

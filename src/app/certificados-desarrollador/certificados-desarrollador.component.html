@@ -1,0 +1,9 @@
+<h2 class="certificadosTitle">Certificados</h2>
+
+<section class="contenedorCertificados">
+    <section *ngFor="let certificate of certificates" class="img_certificados"> <!-- Certificados -->
+      <a target="_blank" [href]="certificate.url">
+        <img class="imgCertificadosMode" [src]="certificate.image" [alt]="certificate.name">
+      </a>
+    </section>
+</section>
