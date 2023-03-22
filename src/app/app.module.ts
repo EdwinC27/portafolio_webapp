@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DesarrolladoresComponent } from './desarrolladores/desarrolladores.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DesarrolladorComponent } from './desarrollador/desarrollador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DesarrolladoresComponent
+    DesarrolladorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Project } from './desarrolladores.model';
+import { Project } from './desarrollador.model';
 
 @Component({
-  selector: 'app-desarrolladores',
-  templateUrl: './desarrolladores.component.html',
-  styleUrls: ['./desarrolladores.component.css']
+  selector: 'app-desarrollador',
+  templateUrl: './desarrollador.component.html',
+  styleUrls: ['./desarrollador.component.css']
 })
-export class DesarrolladoresComponent {
+export class DesarrolladorComponent {
   projects: Project[] = [
     {
       title: 'Portafolio',
