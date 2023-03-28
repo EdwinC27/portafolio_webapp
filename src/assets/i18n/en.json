@@ -1,6 +1,7 @@
 {
-    "welcomeMessage": "Welcome to my app!",
-    "loginButton": "Log in",
-    "registerButton": "Register"
+    "titlePresentation": "Hello, I am Edwin Castillo, passionate about software development and management",
+    "textPresentation": "I am currently 18 years old, I am passionate about technology, I like to constantly learn new things related to programming, my main hobby is computer security and software development.",
+    "linksProyectos": "Go to the application",
+    "titleProyectos": "Web projects",
+    "titleCertificados": "Certificates"
 }
-  

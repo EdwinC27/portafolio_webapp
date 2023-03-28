@@ -1,4 +1,4 @@
-<h2 class="proyectosTitle text-center">{{ title }}</h2>
+<h2 class="proyectosTitle text-center">{{ 'titleProyectos' | translate }}</h2>
 
 <div class="contenedorProjects">
   <div class="diseñodivProjects text-center diseñodivProjectsMarco" *ngFor="let project of projects" (click)="toggleDescription(project)">
@@ -6,7 +6,7 @@
 
     <img [src]="project.image" [alt]="project.title"><br><br>
 
-    <a target="_blank" [href]="project.deployedUrl"class="botonProjects">{{ irAplicacion }}</a><br><br>
+    <a target="_blank" [href]="project.deployedUrl"class="botonProjects">{{ 'linksProyectos' | translate }}</a><br><br>
     <p *ngIf="project.showDescription">{{ project.description }}</p>
   </div>
 </div>
