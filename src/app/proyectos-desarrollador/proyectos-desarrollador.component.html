@@ -1,7 +1,7 @@
 <h2 class="proyectosTitle text-center">{{ 'titleProyectos' | translate }}</h2>
 
 <div class="contenedorProjects">
-  <div class="diseñodivProjects text-center diseñodivProjectsMarco" *ngFor="let project of projects" (click)="toggleDescription(project)">
+  <div class="diseñodivProjects text-center diseñodivProjectsMarco" *ngFor="let project of proyecto" (click)="toggleDescription(project)">
     <h2>{{ project.title }}</h2>
 
     <img [src]="project.image" [alt]="project.title"><br><br>
