@@ -23,8 +23,10 @@ export class AppComponent {
     this.translate.use('es');
 
   }
+  currentLanguage = 'es';
 
   cambiarIdioma(idioma: string) {
     this.translate.use(idioma);
+    this.currentLanguage = idioma;
   }
 }
