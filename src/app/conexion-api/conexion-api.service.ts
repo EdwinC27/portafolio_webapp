@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs';
+import { Certificados } from '../certificados-desarrollador/certificados-desarrollador.model';
 import { Project } from '../proyectos-desarrollador/proyectos-desarrollador.model';
 
 @Injectable({
@@ -14,12 +15,16 @@ export class conexionAPI {
 
   getPeticionCertificados() {
     const url = `http://localhost:3000/certificados`;
-    this.proyectos = this.http.get(url);
-
-    return this.proyectos.pipe(
+    this.certificados = this.http.get(url);
+    return this.certificados.pipe(
       map((response: any) => {
-        this.certificados = response;
-      }));
+        return response.map((certificados: Certificados) => ({
+          name: certificados.name,
+          image: certificados.image,
+          url: certificados.url,
+        }));
+      })
+    );
   }
 
   getPeticionProyectos() {
