@@ -1,14 +1,26 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CertificadosDesarrolladorComponent } from './certificados-desarrollador.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
 
-describe('CertificadosDesarrolladorComponent', () => {
+describe('CertificadosDesarrolladorComponent', function () {
   let component: CertificadosDesarrolladorComponent;
   let fixture: ComponentFixture<CertificadosDesarrolladorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CertificadosDesarrolladorComponent ]
+      providers: [
+        TranslateService
+      ],
+      declarations: [
+        CertificadosDesarrolladorComponent
+      ],
+      imports: [
+        HttpClientModule,
+        TranslateModule.forRoot()
+      ],
     })
     .compileComponents();
 

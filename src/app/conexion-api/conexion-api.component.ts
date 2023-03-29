@@ -1,5 +1,4 @@
-import { Component, Injectable, OnInit } from '@angular/core';
-import { conexionAPI } from './conexion-api.service'
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
