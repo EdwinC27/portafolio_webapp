@@ -14,13 +14,14 @@ export class ProyectosDesarrolladorComponent implements OnInit {
   }
 
   constructor(private conexionApi:conexionAPI) {}
-  proyecto:any;
+  proyecto: Project[] = [];
 
   ngOnInit () {
     this.conexionApi.getPeticionProyectos().subscribe(
-      () => {
-        this.proyecto = this.conexionApi.proyectos;
+      (proyectos: Project[]) => {
+        this.proyecto = proyectos;
       }
+
     );
   }
 }

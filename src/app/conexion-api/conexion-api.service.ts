@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs';
+import { Project } from '../proyectos-desarrollador/proyectos-desarrollador.model';
 
 @Injectable({
   providedIn: 'root'
@@ -26,8 +27,15 @@ export class conexionAPI {
     this.proyectos = this.http.get(url);
     return this.proyectos.pipe(
       map((response: any) => {
-        this.proyectos = response;
-      }));
+        return response.map((proyecto: Project) => ({
+          title: proyecto.title,
+          image: proyecto.image,
+          description: proyecto.description,
+          deployedUrl: proyecto.deployedUrl,
+          showDescription: false,
+        }));
+      })
+    );
   }
 
 }
