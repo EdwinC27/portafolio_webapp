@@ -20,13 +20,16 @@ describe('AppComponent', () => {
     translateService = TestBed.inject(TranslateService);
   });
 
-  it('should add supported languages', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    expect(translateService.getLangs()).toEqual(['en', 'es']);
-  });
-
   it('should create', () => {
     expect(AppComponent).toBeTruthy();
+  });
+
+  it('should not change language for unsupported language', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const appComponent = fixture.componentInstance;
+    appComponent.cambiarIdioma('fr');
+    expect(appComponent.currentLanguage).toEqual('en');
+    expect(translateService.currentLang).toEqual('en');
   });
 });
