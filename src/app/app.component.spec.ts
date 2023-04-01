@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 describe('AppComponent', () => {
+  let translateService: TranslateService;
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
@@ -14,27 +16,36 @@ describe('AppComponent', () => {
         AppComponent
       ],
     }).compileComponents();
-  });
 
-  it('should use default language if browser language does not match a supported language', () => {
-    spyOn(TranslateService.prototype, 'getBrowserLang').and.returnValue('fr');
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const translateService = TestBed.inject(TranslateService);
-    expect(translateService.currentLang).toEqual('en');
+    translateService = TestBed.inject(TranslateService);
   });
-
 
   it('should add supported languages', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const translateService = fixture.debugElement.injector.get(TranslateService);
+    fixture.detectChanges();
     expect(translateService.getLangs()).toEqual(['en', 'es']);
   });
 
-  it('should create the app', () => {
+  it('should use browser language if it matches a supported language', () => {
+    spyOn(translateService, 'getBrowserLang').and.returnValue('es');
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    fixture.detectChanges();
+    expect(translateService.currentLang).toEqual('es');
+  });
+
+  it('should use default language if browser language does not match a supported language', () => {
+    spyOn(translateService, 'getBrowserLang').and.returnValue('fr');
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    expect(translateService.currentLang).toEqual('en');
+  });
+
+  it('should change language when calling cambiarIdioma method', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const component = fixture.componentInstance;
+    component.cambiarIdioma('es');
+    expect(translateService.currentLang).toEqual('es');
   });
 
 });
