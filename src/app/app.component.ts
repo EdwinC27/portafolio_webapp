@@ -7,23 +7,12 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  currentLanguage = 'en';
 
-  constructor(private translate: TranslateService) {
-    // Agrega los idiomas admitidos
-    translate.addLangs(['en', 'es']);
-
-    // Establece el idioma actual
-    translate.setDefaultLang('en');
-
-    // Obtiene el idioma actual del navegador
-    const browserLang = translate.getBrowserLang()?? 'en';
-    translate.use(browserLang.match(/en|es/) ? browserLang : 'en');
-
-    this.translate.use('es');
-
+  constructor(private translate: TranslateService) {  
+    translate.use(this.currentLanguage);
   }
-  currentLanguage = 'es';
-
+ 
   cambiarIdioma(idioma: string) {
     this.translate.use(idioma);
     this.currentLanguage = idioma;

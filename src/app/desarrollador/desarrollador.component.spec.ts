@@ -33,4 +33,13 @@ describe('DesarrolladoresComponent', function () {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should set the correct value for presentacionImg', () => {
+    expect(component.presentacionImg).toEqual("../../assets/imagenes/edwin.png");
+  });
+  
+  it('should have an "alt" attribute on the image', () => {
+    const imgElement = fixture.nativeElement.querySelector('img');
+    expect(imgElement.getAttribute('alt')).toBeTruthy();
+  });
 });

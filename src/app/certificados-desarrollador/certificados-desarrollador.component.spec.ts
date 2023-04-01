@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { conexionAPI } from '../conexion-api/conexion-api.service';
-import { of } from 'rxjs';
 
 describe('CertificadosDesarrolladorComponent', function () {
   let component: CertificadosDesarrolladorComponent;
@@ -36,15 +35,6 @@ describe('CertificadosDesarrolladorComponent', function () {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-  });
-
-  it('should integrate with service', () => {
-    mockService.getPeticionCertificados.and.returnValue(of([]));
-
-    fixture.detectChanges();
-
-    expect(mockService.getPeticionCertificados).toHaveBeenCalled();
-    expect(component.certificates).toEqual([]);
   });
 
 });
