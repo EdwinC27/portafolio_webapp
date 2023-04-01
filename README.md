@@ -13,7 +13,7 @@ Espero que disfrutes revisando mi trabajo y que encuentres algunos proyectos que
 
 ## Boceto
 <img src="https://github.com/EdwinC27/portafolio_webapp/blob/master/boceto.jpg">
-Este es el boceto de la página web
+Este es el boceto de la página web ya terminado si quieres ver el boceto inicial ve a <a href="https://github.com/EdwinC27/portafolio_webapp/blob/master/src/assets/bocetoInicial.png">Aqui</a>.
 
 
 ## Requisitos:
@@ -26,6 +26,10 @@ Este es el boceto de la página web
   ```  
     npm install @angular/cli
   ```
+4. Tener instalado json-server en tu equipo, si no cuentas con el puedes hacerlo con el siguiente comando:
+  ``` 
+    npm install -g json-server
+  ```
 
 ## Inicializacion
 Para utilizar este proyecto, se pueden seguir una las siguientes instrucciones:
@@ -34,11 +38,23 @@ Para utilizar este proyecto, se pueden seguir una las siguientes instrucciones:
 ### Descarga el proyecto comprimido en .zip
 1. Descarga el proyecto en formato .zip desde la opción "Code" de este repositorio.
 2. Una vez descargado, descomprime el archivo y abre la carpeta del proyecto.
-3. Finalmente, para ejecutar la aplicación, utilize primero el comando:
+3. Para ejecutar la aplicación siga los siguientes pasos:
+     - Abra una termnal en la raiz del proyecto y ejecute:
      ```  
        npm install
      ```
-     Despues el siguiente comando: 
+     
+     - dirijase a la ruta: 
+     ```
+       cd .\src\assets\api\
+     ```
+     
+     - ejecute: 
+     ```
+       json-server --watch api.json
+     ```
+     
+     - Finalmente ejecute este:
      ```  
        ng serve
      ```
@@ -52,10 +68,22 @@ Para utilizar este proyecto, se pueden seguir una las siguientes instrucciones:
     ```
 2. Una vez descargado, abre la carpeta del proyecto
 3. Finalmente, para ejecutar la aplicación, utilize primero el comando:
+     - Abra una termnal en la raiz del proyecto y ejecute:
      ```  
        npm install
      ```
-     Despues el siguiente comando: 
+     
+     - dirijase a la ruta: 
+     ```
+       cd .\src\assets\api\
+     ```
+     
+     - ejecute: 
+     ```
+       json-server --watch api.json
+     ```
+     
+     - Finalmente ejecute este:
      ```  
        ng serve
      ```
